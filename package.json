@@ -1,5 +1,5 @@
 {
-    "name": "typescript-storybook",
+    "name": "storybook-typescript-starter",
     "version": "1.0.0",
     "description": "Starter project using Storybook, StoryShots, Jest and TypeScript",
     "main": "lib/src/index.ts",
