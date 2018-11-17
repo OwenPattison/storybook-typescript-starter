@@ -1,0 +1,57 @@
+{
+    "name": "typescript-storybook",
+    "version": "1.0.0",
+    "description": "Starter project using Storybook, StoryShots, Jest and TypeScript",
+    "main": "lib/src/index.ts",
+    "typings": "lib/src/index.d.ts",
+    "author": "Owen Pattison",
+    "license": "MIT",
+    "scripts": {
+        "compile": "tsc",
+        "test": "jest",
+        "storybook": "start-storybook -p 6006",
+        "build-storybook": "build-storybook"
+    },
+    "dependencies": {
+        "react": "^16.6.3",
+        "react-dom": "^16.6.3"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.1.6",
+        "@storybook/addon-actions": "^4.0.7",
+        "@storybook/addon-info": "^4.0.7",
+        "@storybook/addon-links": "^4.0.7",
+        "@storybook/addon-storyshots": "^4.0.7",
+        "@storybook/addons": "^4.0.7",
+        "@storybook/react": "^4.0.7",
+        "@types/jest": "^23.3.9",
+        "@types/storybook__addon-info": "^3.4.2",
+        "@types/storybook__addon-storyshots": "^3.4.3",
+        "@types/storybook__react": "^4.0.0",
+        "awesome-typescript-loader": "^5.2.1",
+        "babel-loader": "^8.0.4",
+        "jest": "^23.6.0",
+        "react-docgen-typescript-loader": "^3.0.0",
+        "react-test-renderer": "^16.6.3",
+        "ts-jest": "^23.10.4",
+        "typescript": "^3.1.6"
+    },
+    "jest": {
+        "transform": {
+            ".(jsx|ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+        },
+        "mapCoverage": true,
+        "testPathIgnorePatterns": [
+            "/node_modules/",
+            "/lib/"
+        ],
+        "testRegex": "(/test/.*|\\.(test|spec))\\.(ts|tsx|js|jsx)$",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "jsx",
+            "json"
+        ]
+    }
+}
