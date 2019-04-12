@@ -1,12 +1,21 @@
 import * as React from "react";
 
-export interface SampleWidgetProps {
+type PropTypes = {
     name: string;
     age: number;
 }
 
-export class SampleWidget extends React.Component<SampleWidgetProps, {}> {
-    render() {
-        return <div><h1>Hello {this.props.name} {this.props.age}</h1></div>;
-    }
+interface SampleWidgetProps {
+    name: string;
+    age: number;
 }
+
+const SampleWidget: React.FunctionComponent<SampleWidgetProps> = ({ name, age }: PropTypes ) => (
+    <div>
+        <h1>Hello {name} {age}</h1>
+    </div>
+);
+
+export {
+    SampleWidget
+};
