@@ -1,6 +1,6 @@
-module.exports = (baseConfig, config, defaultConfig) => {
+module.exports = ({ config }) => {
 
-    defaultConfig.module.rules.push({
+    config.module.rules.push({
         test: /\.(ts|tsx)$/,
         use: [
             require.resolve("awesome-typescript-loader"),
@@ -8,7 +8,7 @@ module.exports = (baseConfig, config, defaultConfig) => {
         ]
     });
 
-    defaultConfig.resolve.extensions.push(".ts", ".tsx");
+    config.resolve.extensions.push(".ts", ".tsx");
 
-    return defaultConfig;
+    return config;
 };
