@@ -1,11 +1,11 @@
 version: 2
 jobs:
   build:
-    docker:
-      image: circleci/node:8.9.1
     working_directory: ./
+    docker:
+      - image: circleci/node:4.8.2
     steps:
-        - checkout
-        - run:
-            name: Run build
-            command: npm run build
+      - checkout
+      - run:
+          name: Run build
+          command: npm run build
