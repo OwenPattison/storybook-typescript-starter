@@ -7,5 +7,8 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Install dependencies
+          command: npm i
+      - run:
           name: Run build storybook
           command: npm run build-storybook
