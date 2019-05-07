@@ -1330,7 +1330,7 @@
     prop-types "^15.6.2"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-storyshots@^5.0.6":
+"@storybook/addon-storyshots@^5.0.11":
   version "5.0.11"
   resolved "https://registry.yarnpkg.com/@storybook/addon-storyshots/-/addon-storyshots-5.0.11.tgz#006335e7949c6e03b81f6570c050dc5bb912d102"
   dependencies:
