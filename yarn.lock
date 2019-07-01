@@ -1753,9 +1753,9 @@
     "@types/react" "*"
     "@types/storybook__react" "*"
 
-"@types/storybook__addon-storyshots@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@types/storybook__addon-storyshots/-/storybook__addon-storyshots-4.0.0.tgz#220e7859701feff731229a4a65d8980cf4aee148"
+"@types/storybook__addon-storyshots@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@types/storybook__addon-storyshots/-/storybook__addon-storyshots-4.0.1.tgz#5bd520cd5a0386428f211453386f1b0af9596431"
   dependencies:
     "@types/puppeteer" "*"
     "@types/react" "*"
